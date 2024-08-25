@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerbera Realista con Mensaje</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #87CEEB;
+            margin: 0;
+            flex-direction: column;
+        }
+        .flor {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+        .pétalo {
+            position: absolute;
+            width: 80px;
+            height: 160px;
+            background: radial-gradient(circle at 50% 50%, #FF6347 0%, #FF4500 70%, #FF0000 100%);
+            border-radius: 50% 50% 0 0;
+            transform-origin: bottom center;
+        }
+        .flor .pétalo:nth-child(1)  { transform: rotate(0deg);    top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(2)  { transform: rotate(15deg);   top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(3)  { transform: rotate(30deg);   top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(4)  { transform: rotate(45deg);   top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(5)  { transform: rotate(60deg);   top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(6)  { transform: rotate(75deg);   top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(7)  { transform: rotate(90deg);   top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(8)  { transform: rotate(105deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(9)  { transform: rotate(120deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(10) { transform: rotate(135deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(11) { transform: rotate(150deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(12) { transform: rotate(165deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(13) { transform: rotate(180deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(14) { transform: rotate(195deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(15) { transform: rotate(210deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(16) { transform: rotate(225deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(17) { transform: rotate(240deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(18) { transform: rotate(255deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(19) { transform: rotate(270deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(20) { transform: rotate(285deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(21) { transform: rotate(300deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(22) { transform: rotate(315deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(23) { transform: rotate(330deg);  top: -60px; left: 60px; }
+        .flor .pétalo:nth-child(24) { transform: rotate(345deg);  top: -60px; left: 60px; }
+
+        .centro {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle at 50% 50%, #FFD700 0%, #B8860B 100%);
+            border-radius: 50%;
+        }
+
+        .centro::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle at 50% 50%, #B8860B 0%, #8B4513 100%);
+            border-radius: 50%;
+        }
+
+        .tallo {
+            position: absolute;
+            top: 200px;
+            left: 90px;
+            width: 20px;
+            height: 400px;
+            background: linear-gradient(#006400, #228B22);
+            border-radius: 10px;
+        }
+
+        .contador {
+            font-size: 2em;
+            color: #006400;
+            margin-top: 20px;
+        }
+
+        .mensaje {
+            position:absolute;
+            margin-top: 700px;
+            padding: 20px;
+            background-color: #FFB6C1;
+            border: 2px solid #FF69B4;
+            border-radius: 15px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 1.5em;
+            color: #8B0000;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="flor">
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="pétalo"></div>
+        <div class="centro"></div>
+        <div class="tallo"></div>
+    </div>
+    <div class="contador" id="contador">0</div>
+    <div class="mensaje">
+        Te amo 500 mil millones de trillones mi princesa, te doy esta gerbera para que puedas verla diario sin que se marchite, será eterna como mi amor por ti y nadie la verá más que tú, te amo preciosa.
+    </div>
+
+    <script>
+        let contador = 0;
+        const contadorElement = document.getElementById('contador');
+
+        setInterval(() => {
+            contador++;
+            contadorElement.textContent = contador;
+        }, 1000);
+    </script>
+</body>
+</html>
